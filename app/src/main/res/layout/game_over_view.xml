@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:id="@+id/settingsTopRelativeLayout">
+
+        <TextView
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_width="@dimen/fifty_dp"
+            android:background="@drawable/home_button_selector"
+            android:id="@+id/homeButton"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/ten_dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:id="@+id/gameOverTitleLinearLayout">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:id="@+id/gameOverMidRelativeLayout">
+
+        <TextView
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/scoreBoardTextView"
+            android:textSize="@dimen/text_size_25"
+            android:textColor="@color/colorBlack"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_height="@dimen/eighty_dp"
+                android:layout_width="@dimen/eighty_dp"
+                android:background="@drawable/play_button_selector"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ten_dp"
+                android:id="@+id/playAgainButton" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

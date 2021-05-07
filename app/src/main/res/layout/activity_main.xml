@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <View
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:background="@drawable/cloud1"
+            android:layout_margin="@dimen/ten_dp"
+            android:id="@+id/cloud1"/>
+
+        <View
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:background="@drawable/cloud2"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_below="@+id/cloud1"
+            android:id="@+id/cloud2"/>
+
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rootViewFlipper">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:id="@+id/rl_top">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:id="@+id/mainTitleLinearLayout">
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:id="@+id/rl_mid">
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid"
+                        android:layout_centerHorizontal="true"
+                        android:useDefaultMargins="true"
+                        android:rowCount="2"
+                        android:columnCount="2">
+
+                        <TextView
+                            android:layout_height="@dimen/eighty_dp"
+                            android:layout_width="@dimen/eighty_dp"
+                            android:background="@drawable/play_button_selector"
+                            android:textSize="50sp"
+                            android:gravity="center"
+                            android:onClick="playOnClick" />
+                        <TextView
+                            android:layout_height="@dimen/eighty_dp"
+                            android:layout_width="@dimen/eighty_dp"
+                            android:background="@drawable/settings_button_selector"
+                            android:textSize="50sp"
+                            android:gravity="center"
+                            android:onClick="settingsOnClick" />
+
+                    </GridLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:id="@+id/settingsTopRelativeLayout">
+                    <TextView
+                        android:layout_width="@dimen/fifty_dp"
+                        android:layout_height="@dimen/fifty_dp"
+                        android:layout_margin="@dimen/ten_dp"
+                        android:background="@drawable/back_button_selector"
+                        android:id="@+id/mainBackButton"
+                        android:onClick="mainBackButtonOnClick"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:id="@+id/settingsTitleLinearLayout">
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:id="@+id/settingsMidRelativeLayout">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/thirty_dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/addition"
+                                android:layout_width="@dimen/eighty_dp"
+                                android:layout_height="@dimen/eighty_dp"
+                                android:background="@drawable/addition_selector"
+                                android:button="@color/colorTransparent"
+                                android:text="+"
+                                android:textColor="@color/colorTransparent"
+                                android:onClick="radioButtonOnClick"
+                                android:layout_margin="@dimen/five_dp"/>
+
+                            <RadioButton
+                                android:id="@+id/subtraction"
+                                android:layout_width="@dimen/eighty_dp"
+                                android:layout_height="@dimen/eighty_dp"
+                                android:background="@drawable/subtraction_selector"
+                                android:button="@color/colorTransparent"
+                                android:text="-"
+                                android:textColor="@color/colorTransparent"
+                                android:onClick="radioButtonOnClick"
+                                android:layout_margin="@dimen/five_dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/multiplication"
+                                android:layout_width="@dimen/eighty_dp"
+                                android:layout_height="@dimen/eighty_dp"
+                                android:background="@drawable/multiplication_selector"
+                                android:button="@color/colorTransparent"
+                                android:text="*"
+                                android:textColor="@color/colorTransparent"
+                                android:onClick="radioButtonOnClick"
+                                android:layout_margin="@dimen/five_dp"/>
+
+                            <RadioButton
+                                android:id="@+id/division"
+                                android:layout_width="@dimen/eighty_dp"
+                                android:layout_height="@dimen/eighty_dp"
+                                android:background="@drawable/division_selector"
+                                android:button="@color/colorTransparent"
+                                android:text="/"
+                                android:textColor="@color/colorTransparent"
+                                android:onClick="radioButtonOnClick"
+                                android:layout_margin="@dimen/five_dp"/>
+                        </LinearLayout>
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_below="@+id/radioGroup"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ViewFlipper>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:id="@+id/rl_bot">
+
+    </RelativeLayout>
+
+</LinearLayout>

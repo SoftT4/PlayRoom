@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="two_hundred_dp">200dp</dimen>
+    <dimen name="hundred_dp">100dp</dimen>
+    <dimen name="eighty_dp">80dp</dimen>
+    <dimen name="seventy_five_dp">75dp</dimen>
+    <dimen name="sixty_dp">60dp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="thirty_dp">30dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="two_dp">2dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="text_size">10sp</dimen>
+    <dimen name="text_size_50">50sp</dimen>
+    <dimen name="text_size_40">40sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="text_size_low">5sp</dimen>
+
+
+    <dimen name="textSize35">35sp</dimen>
+    <dimen name="textSize28">28sp</dimen>
+    <dimen name="textSize22">22sp</dimen>
+    <dimen name="textSize18">18sp</dimen>
+
+    <dimen name="titleTextSize">@dimen/textSize18</dimen>
+
+</resources>

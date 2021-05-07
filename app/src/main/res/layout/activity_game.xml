@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".GameActivity">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:id="@+id/gameRootViewFlipper">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:id="@+id/rl_top_game">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberOfQuest"
+                    android:textSize="@dimen/text_size_30"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scoreTextView"
+                    android:layout_below="@+id/numberOfQuest"
+                    android:textSize="@dimen/text_size_30"
+                    android:textAlignment="textEnd"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/five_dp"/>
+
+                <TextView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:id="@+id/clock"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:text="30s"
+                    android:textSize="@dimen/textSize18"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:background="@drawable/clock" />
+
+                <TextView
+                    android:layout_width="@dimen/eighty_dp"
+                    android:layout_height="@dimen/eighty_dp"
+                    android:id="@+id/clock_add"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:layout_toEndOf="@+id/clock"
+                    android:text="+5s"
+                    android:textSize="@dimen/textSize18"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:background="@drawable/clock"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/gameViewFlipper"
+                android:layout_weight="0.75">
+
+            </ViewFlipper>
+        </LinearLayout>
+    </ViewFlipper>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:id="@+id/rl_bot_game">
+
+    </RelativeLayout>
+
+</LinearLayout>

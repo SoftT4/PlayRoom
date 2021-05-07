@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_names">
+        <item>shape_purple</item>
+        <item>shape_orange</item>
+        <item>shape_yellow</item>
+        <item>shape_green</item>
+        <item>shape_red</item>
+        <item>shape_blue</item>
+    </string-array>
+
+    <string-array name="main_title">
+        <item>PLAY</item>
+        <item>ROOM</item>
+    </string-array>
+
+    <string-array name="settings_title">
+        <item>MAKE</item>
+        <item>YOUR</item>
+        <item>CHOICE</item>
+    </string-array>
+
+    <string-array name="game_over_title">
+        <item>GAME</item>
+        <item>OVER</item>
+    </string-array>
+</resources>

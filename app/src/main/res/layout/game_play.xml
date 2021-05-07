@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_mid_game">
+
+
+        <LinearLayout
+            android:id="@+id/gameLinearView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/optionA"
+                android:layout_width="@dimen/hundred_dp"
+                android:layout_height="@dimen/sixty_dp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="1"
+                android:textSize="@dimen/text_size_30"
+                android:background="@drawable/orange_button"/>
+
+            <TextView
+                android:id="@+id/operatorTextView"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="@dimen/text_size_30"
+                android:textColor="@color/colorBlack"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/optionB"
+                android:layout_width="@dimen/hundred_dp"
+                android:layout_height="@dimen/sixty_dp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="1"
+                android:textSize="@dimen/text_size_30"
+                android:background="@drawable/purple_button"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/questionTextEquals"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/gameLinearView"
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:layout_centerHorizontal="true"
+            android:text="="
+            android:textSize="@dimen/text_size_30"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/correctOrWrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTextEquals"
+            android:text="Correct!"
+            android:textSize="@dimen/text_size_30"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_mid_game2">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grid"
+            android:layout_centerInParent="true"
+            android:useDefaultMargins="true"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/hundred_dp"
+                android:background="@drawable/blue_button_selector"
+                android:id="@+id/answerA"
+                android:layout_margin="@dimen/thirty_dp"
+                android:text="1"
+                android:textSize="@dimen/text_size_30"
+                android:textAlignment="center"
+                android:gravity="center" />
+            <TextView
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/hundred_dp"
+                android:background="@drawable/yellow_button_selector"
+                android:layout_margin="@dimen/thirty_dp"
+                android:id="@+id/answerB"
+                android:text="1"
+                android:textSize="@dimen/text_size_30"
+                android:textAlignment="center"
+                android:gravity="center" />
+            <TextView
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/hundred_dp"
+                android:background="@drawable/purple_button_selector"
+                android:layout_margin="@dimen/thirty_dp"
+                android:id="@+id/answerC"
+                android:text="1"
+                android:textSize="@dimen/text_size_30"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_width="@dimen/hundred_dp"
+                android:background="@drawable/green_button_selector"
+                android:layout_margin="@dimen/thirty_dp"
+                android:id="@+id/answerD"
+                android:text="1"
+                android:textSize="@dimen/text_size_30"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

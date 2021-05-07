@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Team4.TTA">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_math"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_math"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.MathForKids">
+        <activity android:name="com.Team4.TTA.ForgotPassword"></activity>
+        <activity android:name="com.Team4.TTA.EditProfile" />
+        <activity android:name="com.Team4.TTA.Profile" />
+        <activity android:name="com.Team4.TTA.SignUp" />
+        <activity android:name="com.Team4.TTA.Login" />
+        <activity
+            android:name="com.Team4.TTA.GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Team4.TTA.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Team4.TTA.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/AD_MOB_APP_ID" />
+    </application>
+
+</manifest>

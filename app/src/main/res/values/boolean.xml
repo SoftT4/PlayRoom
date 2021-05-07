@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    If your app for children, set the value to true-->
+    <bool name="application_for_children">true</bool>
+</resources>

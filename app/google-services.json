@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625823159488",
+    "project_id": "playroom-c13ab",
+    "storage_bucket": "playroom-c13ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625823159488:android:9c8e75e847036bb0494925",
+        "android_client_info": {
+          "package_name": "com.Team4.TTA"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625823159488-lca8qdahjie8svu4dclh4m7akeoi33up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7wA0h5iw-xlcCf_YQwa-8T650vuH83Uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625823159488-lca8qdahjie8svu4dclh4m7akeoi33up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
