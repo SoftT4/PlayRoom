@@ -11,7 +11,10 @@
         android:roundIcon="@drawable/playroom"
         android:supportsRtl="false"
         android:theme="@style/Theme.MathForKids">
-        <activity android:name=".LearnOrPlay123"></activity>
+        <activity android:name=".LearnOrPlay123"/>
+        <activity android:name=".LearnOrPlayABC"/>
+        <activity android:name=".learn_123"/>
+        <activity android:name=".learn_alphabet"/>
         <activity android:name=".Start" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".EditProfile" />

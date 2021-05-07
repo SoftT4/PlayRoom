@@ -24,7 +24,6 @@ public class LearnOrPlay123 extends AppCompatActivity {
         back = findViewById(R.id.back_btn);
 
         back.setOnClickListener(view -> {
-
             Intent intent = new Intent(LearnOrPlay123.this, Start.class);
             startActivity(intent);
         });
