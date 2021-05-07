@@ -11,16 +11,18 @@
         android:roundIcon="@drawable/playroom"
         android:supportsRtl="false"
         android:theme="@style/Theme.MathForKids">
-        <activity android:name="com.Team4.TTA.ForgotPassword"></activity>
-        <activity android:name="com.Team4.TTA.EditProfile" />
-        <activity android:name="com.Team4.TTA.Profile" />
-        <activity android:name="com.Team4.TTA.SignUp" />
-        <activity android:name="com.Team4.TTA.Login" />
+        <activity android:name=".LearnOrPlay123"></activity>
+        <activity android:name=".Start" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".Profile" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
         <activity
-            android:name="com.Team4.TTA.GameActivity"
+            android:name=".GameActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.Team4.TTA.SplashScreenActivity"
+            android:name=".SplashScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.Team4.TTA.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait" />
 
         <meta-data

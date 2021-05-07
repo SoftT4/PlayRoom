@@ -75,7 +75,7 @@ public class Profile extends AppCompatActivity {
 
         start.setOnClickListener(view -> {
 
-            Intent intent = new Intent(Profile.this, MainActivity.class);
+            Intent intent = new Intent(Profile.this, Start.class);
             startActivity(intent);
         });
 
